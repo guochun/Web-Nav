@@ -1,0 +1,93 @@
+
+body{
+    height: 100vh;
+    background: red url("../img/wall.jpg") no-repeat center center;
+    background-size: cover;
+}
+/*main主体样式*/
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container {
+    display: inline-block;
+    background: rgb(255,255,255,0.2);
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1px #ccc,
+                0px 0px 0px 2px #bbb,
+                0PX 3px 0px 2px #aaa;
+   
+}
+.container .row {
+    margin: 0.16rem;
+}
+.container div:nth-child(2) {
+    margin-left: 0.5rem;
+}
+.container div:nth-child(3) {
+    margin-left: 1rem;
+}
+.container .key{
+    width: 0.6rem;
+    height: 0.48rem;
+    margin: 0px 0.05rem;
+    font-size: 0.18rem;
+    font-family: Helvetica;
+    color: #c5c5c5;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #292929 0%,#111111 100%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #373737;
+    border-radius: 6px;
+    box-shadow: 0px 0px 0px 1px #1A1B1C,
+                0px 0px 0px 2px #1F2020,
+                0PX 3px 0px 2px #080808;
+    position: relative;
+   
+  
+}
+
+.container kbd:hover{
+    box-shadow: 0px 0px 6px 1px rgba(189,183,189,0.5);
+}
+
+main>.container kbd>button {
+
+    width: 0.14rem;
+    height: 0.14rem;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    background: #FB971D;
+    color: white;
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+}
+
+main>.container kbd:hover>button {
+    display: inline-flex;
+    
+}
+
+main>.container kbd>button:hover {
+    background: black;
+    
+}
+
+main>.container kbd>img{
+
+    width: 0.15rem;
+    height: 0.15rem;
+    position: absolute;
+    left: 0.02rem;
+    bottom: 0.02rem;
+}
